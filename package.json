@@ -2,8 +2,49 @@
   "name": "@typestyled/core",
   "version": "0.1.0",
   "description": "Typestyled core CSS properties.",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "typings": "./lib/index",
+  "types": "./lib/index",
+  "module": "./lib.es2015/index.js",
+  "jsnext:main": "./lib.es2015/index.js",
   "repository": "git@github.com:typestyled/core.git",
+  "keywords": [
+    "typestyle",
+    "CSS"
+  ],
   "author": "Frederik Krautwald <fkrautwald@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/typestyled/core/issues"
+  },
+  "homepage": "https://github.com/typestyled/core#readme",
+  "scripts": {
+    "build": "tsc -p . && tsc -p tsconfig.es2015.json",
+    "lint": "yarn lint:import && yarn lint:prettier",
+    "lint:import": "./node_modules/.bin/import-sort --overwrite 'src/' || true",
+    "lint:prettier": "./node_modules/.bin/prettier --write --print-width 100 --tab-width 2 --no-semi --single-quote --trailing-comma es5 --parser typescript 'src/**/*.ts'",
+    "precommit": "lint-staged",
+    "test": "yarn test:lint && yarn test:unit",
+    "test:lint": "yarn lint:prettier",
+    "test:unit": "./node_modules/.bin/typed-test 'src/*.test.ts' 'src/**/*.test.ts'"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "lint",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@typed/test": "4.0.0",
+    "husky": "0.14.3",
+    "import-sort-cli": "3.3.0",
+    "import-sort-parser-typescript": "3.2.0",
+    "import-sort-style-eslint": "3.0.0",
+    "lint-staged": "4.3.0",
+    "prettier": "1.7.4",
+    "typescript": "2.5.3"
+  },
+  "dependencies": {
+    "typestyle": "1.4.3"
+  }
 }
