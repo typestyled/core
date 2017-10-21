@@ -1,0 +1,9 @@
+{
+  "name": "@typestyled/core",
+  "version": "0.1.0",
+  "description": "Typestyled core CSS properties.",
+  "main": "index.js",
+  "repository": "git@github.com:typestyled/core.git",
+  "author": "Frederik Krautwald <fkrautwald@gmail.com>",
+  "license": "MIT"
+}
