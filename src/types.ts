@@ -16,6 +16,7 @@ export type Configuration = {
   readonly lineHeight: NonnegativeRealNumberPixel
   readonly baselineGrid: NonnegativeIntegerPixel
   readonly piSpacingUnit: NonnegativeIntegerPixel
+  readonly omicronSpacingUnit: NonnegativeIntegerPixel
 }
 
 export type NonnegativeRealNumberPixel = NonnegativeRealNumber

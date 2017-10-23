@@ -51,6 +51,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedPiSpacingUnit, actualPiSpacingUnit)
     }),
+
+    it(`has default omicronSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedOmicronSpacingUnit = 4
+      // Excersise system
+      const sut: Configuration = configure()
+      const { omicronSpacingUnit: actualOmicronSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedOmicronSpacingUnit, actualOmicronSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [

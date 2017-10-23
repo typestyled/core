@@ -23,6 +23,7 @@ import { computeLineHeight } from './computeLineHeight'
 const DEFAULT_FONT_SIZE: NonnegativeRealNumberPixel = 16
 const DEFAULT_BASELINE_GRID: NonnegativeIntegerPixel = 8
 const DEFAULT_PI_SPACING_UNIT_FACTOR: NonnegativeIntegerPixel = 0.25
+const DEFAULT_OMICRON_SPACING_UNIT: NonnegativeIntegerPixel = 4
 
 export function configure(
   {
@@ -39,5 +40,6 @@ export function configure(
     lineHeight,
     baselineGrid,
     piSpacingUnit,
+    omicronSpacingUnit: DEFAULT_OMICRON_SPACING_UNIT,
   }
 }
