@@ -26,6 +26,7 @@ const DEFAULT_FONT_SIZE: NonnegativeRealNumberPixelLength = 16
 const DEFAULT_BASELINE_GRID: NonnegativeIntegerPixelLength = 8
 const DEFAULT_PI_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 0.25
 const DEFAULT_OMICRON_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 0.5
+const DEFAULT_XI_SPACING_UNIT: NonnegativeIntegerPixelLength = DEFAULT_BASELINE_GRID
 
 export function configure(
   {
@@ -46,5 +47,6 @@ export function configure(
     baselineGrid,
     piSpacingUnit,
     omicronSpacingUnit,
+    xiSpacingUnit: DEFAULT_XI_SPACING_UNIT,
   }
 }

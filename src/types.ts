@@ -17,6 +17,7 @@ export type Configuration = {
   readonly baselineGrid: NonnegativeIntegerPixelLength
   readonly piSpacingUnit: NonnegativeIntegerPixelLength
   readonly omicronSpacingUnit: NonnegativeIntegerPixelLength
+  readonly xiSpacingUnit: NonnegativeIntegerPixelLength
 }
 
 export type NonnegativeRealNumberPixelLength = NonnegativeRealNumber
