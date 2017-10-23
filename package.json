@@ -1,6 +1,6 @@
 {
   "name": "@typestyled/core",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Typestyled core CSS properties.",
   "main": "./lib/index.js",
   "typings": "./lib/index",
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/typestyled/core#readme",
   "scripts": {
-    "build": "tsc -p . && tsc -p tsconfig.es2015.json",
+    "build": "yarn clean && tsc -p . && tsc -p tsconfig.es2015.json",
+    "clean": "rimraf ./lib*",
     "lint": "yarn lint:import && yarn lint:prettier",
     "lint:import": "./node_modules/.bin/import-sort --overwrite 'src/' || true",
     "lint:prettier": "./node_modules/.bin/prettier --write --print-width 100 --tab-width 2 --no-semi --single-quote --trailing-comma es5 --parser typescript 'src/**/*.ts'",
@@ -42,9 +43,11 @@
     "import-sort-style-eslint": "3.0.0",
     "lint-staged": "4.3.0",
     "prettier": "1.7.4",
+    "rimraf": "2.6.2",
     "typescript": "2.5.3"
   },
   "dependencies": {
+    "csx": "8.5.0",
     "typestyle": "1.4.3"
   }
 }
