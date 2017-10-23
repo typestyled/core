@@ -68,4 +68,18 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedLineHeight, actualLineHeight)
     }),
   ]),
+
+  given(`a baselineGrid setting`, [
+    it(`returns a configuration of lineHeight`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryBaselineGrid = 3
+      const arbitrarySettings: Settings = { baselineGrid: arbitraryBaselineGrid }
+      const expectedLineHeight = 18
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { lineHeight: actualLineHeight } = sut
+      // Verify outcome
+      equal(expectedLineHeight, actualLineHeight)
+    }),
+  ]),
 ])

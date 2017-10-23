@@ -23,4 +23,5 @@ export type NonnegativeRealNumber = number
 
 export type Settings = {
   readonly fontSize?: PixelCount
+  readonly baselineGrid?: PixelCount
 }

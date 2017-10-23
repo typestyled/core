@@ -18,8 +18,9 @@ import { computeLineHeight } from './computeLineHeight'
 const DEFAULT_FONT_SIZE: PixelCount = 16
 const DEFAULT_BASELINE_GRID: PixelCount = 8
 
-export function configure({ fontSize = DEFAULT_FONT_SIZE }: Settings = {}): Configuration {
-  const baselineGrid = DEFAULT_BASELINE_GRID
+export function configure(
+  { fontSize = DEFAULT_FONT_SIZE, baselineGrid = DEFAULT_BASELINE_GRID }: Settings = {}
+): Configuration {
   const lineHeight = computeLineHeight(baselineGrid, fontSize)
 
   return {
