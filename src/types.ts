@@ -12,17 +12,21 @@
  */
 
 export type Configuration = {
-  readonly fontSize: PixelCount
-  readonly lineHeight: PixelCount
-  readonly baselineGrid: PixelCount
-  readonly piSpacingUnit: PixelCount
+  readonly fontSize: NonnegativeRealNumberPixel
+  readonly lineHeight: NonnegativeRealNumberPixel
+  readonly baselineGrid: NonnegativeIntegerPixel
+  readonly piSpacingUnit: NonnegativeIntegerPixel
 }
 
-export type PixelCount = NonnegativeRealNumber
+export type NonnegativeRealNumberPixel = NonnegativeRealNumber
+
+export type NonnegativeIntegerPixel = NonnegativeInteger
 
 export type NonnegativeRealNumber = number
 
+export type NonnegativeInteger = number
+
 export type Settings = {
-  readonly fontSize?: PixelCount
-  readonly baselineGrid?: PixelCount
+  readonly fontSize?: NonnegativeIntegerPixel
+  readonly baselineGrid?: NonnegativeIntegerPixel
 }

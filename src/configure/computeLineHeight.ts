@@ -11,10 +11,13 @@
  * This file provides functionality to compute line height.
  */
 
-import { PixelCount } from '../types'
+import { NonnegativeIntegerPixel, NonnegativeRealNumberPixel } from '../types'
 
-export function computeLineHeight(baselineGrid: PixelCount, fontSize: PixelCount): PixelCount {
-  let lineHeight: PixelCount = baselineGrid
+export function computeLineHeight(
+  baselineGrid: NonnegativeIntegerPixel,
+  fontSize: NonnegativeRealNumberPixel
+): NonnegativeRealNumberPixel {
+  let lineHeight: NonnegativeRealNumberPixel = baselineGrid
 
   while (lineHeight <= fontSize) lineHeight += baselineGrid
 

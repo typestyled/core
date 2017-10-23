@@ -11,13 +11,18 @@
  * This file provides the configuration function.
  */
 
-import { Configuration, PixelCount, Settings } from '../types'
+import {
+  Configuration,
+  NonnegativeIntegerPixel,
+  NonnegativeRealNumberPixel,
+  Settings,
+} from '../types'
 
 import { computeLineHeight } from './computeLineHeight'
 
-const DEFAULT_FONT_SIZE: PixelCount = 16
-const DEFAULT_BASELINE_GRID: PixelCount = 8
-const DEFAULT_PI_SPACING_UNIT: PixelCount = 2
+const DEFAULT_FONT_SIZE: NonnegativeRealNumberPixel = 16
+const DEFAULT_BASELINE_GRID: NonnegativeIntegerPixel = 8
+const DEFAULT_PI_SPACING_UNIT: NonnegativeIntegerPixel = 2
 
 export function configure(
   { fontSize = DEFAULT_FONT_SIZE, baselineGrid = DEFAULT_BASELINE_GRID }: Settings = {}
