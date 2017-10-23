@@ -13,7 +13,9 @@
 
 import { NonnegativeIntegerPixelLength, NonnegativeRealNumberPixelLength } from '../types'
 
-export function computeLineHeight(
+import { curry2 } from '@typed/functions'
+
+export const computeLineHeight = curry2(function computeLineHeight(
   baselineGrid: NonnegativeIntegerPixelLength,
   fontSize: NonnegativeRealNumberPixelLength
 ): NonnegativeRealNumberPixelLength {
@@ -22,4 +24,4 @@ export function computeLineHeight(
   while (lineHeight <= fontSize) lineHeight += baselineGrid
 
   return lineHeight
-}
+})
