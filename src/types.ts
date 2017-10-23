@@ -12,23 +12,23 @@
  */
 
 export type Configuration = {
-  readonly fontSize: NonnegativeRealNumberPixel
-  readonly lineHeight: NonnegativeRealNumberPixel
-  readonly baselineGrid: NonnegativeIntegerPixel
-  readonly piSpacingUnit: NonnegativeIntegerPixel
-  readonly omicronSpacingUnit: NonnegativeIntegerPixel
+  readonly fontSize: NonnegativeRealNumberPixelLength
+  readonly lineHeight: NonnegativeRealNumberPixelLength
+  readonly baselineGrid: NonnegativeIntegerPixelLength
+  readonly piSpacingUnit: NonnegativeIntegerPixelLength
+  readonly omicronSpacingUnit: NonnegativeIntegerPixelLength
 }
 
-export type NonnegativeRealNumberPixel = NonnegativeRealNumber
+export type NonnegativeRealNumberPixelLength = NonnegativeRealNumber
 
-export type NonnegativeIntegerPixel = NonnegativeInteger
+export type NonnegativeIntegerPixelLength = NonnegativeInteger
 
 export type NonnegativeRealNumber = number
 
 export type NonnegativeInteger = number
 
 export type Settings = {
-  readonly fontSize?: NonnegativeIntegerPixel
-  readonly baselineGrid?: NonnegativeIntegerPixel
+  readonly fontSize?: NonnegativeRealNumberPixelLength
+  readonly baselineGrid?: NonnegativeIntegerPixelLength
   readonly piSpacingUnitFactor?: NonnegativeRealNumber
 }
