@@ -20,27 +20,31 @@ import {
 } from '../types'
 
 import { computeLineHeight } from './computeLineHeight'
+import { computeSpacingUnit } from './computeSpacingUnit'
 
 const DEFAULT_FONT_SIZE: NonnegativeRealNumberPixelLength = 16
 const DEFAULT_BASELINE_GRID: NonnegativeIntegerPixelLength = 8
 const DEFAULT_PI_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 0.25
-const DEFAULT_OMICRON_SPACING_UNIT: NonnegativeIntegerPixelLength = 4
+const DEFAULT_OMICRON_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 0.5
 
 export function configure(
   {
     fontSize = DEFAULT_FONT_SIZE,
     baselineGrid = DEFAULT_BASELINE_GRID,
     piSpacingUnitFactor = DEFAULT_PI_SPACING_UNIT_FACTOR,
+    omicronSpacingUnitFactor = DEFAULT_OMICRON_SPACING_UNIT_FACTOR,
   }: Settings = {}
 ): Configuration {
   const lineHeight = computeLineHeight(baselineGrid, fontSize)
-  const piSpacingUnit = Math.round(baselineGrid * piSpacingUnitFactor)
+  const baselineSpacingUnit = computeSpacingUnit(baselineGrid)
+  const piSpacingUnit = baselineSpacingUnit(piSpacingUnitFactor)
+  const omicronSpacingUnit = baselineSpacingUnit(omicronSpacingUnitFactor)
 
   return {
     fontSize,
     lineHeight,
     baselineGrid,
     piSpacingUnit,
-    omicronSpacingUnit: DEFAULT_OMICRON_SPACING_UNIT,
+    omicronSpacingUnit,
   }
 }

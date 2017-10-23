@@ -116,4 +116,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedPiSpacingUnit, actualPiSpacingUnit)
     }),
   ]),
+
+  given(`an omicronSpacingUnitFactor setting`, [
+    it(`returns a configuration of omicronSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryOmicronSpacingUnitFactor = 0.4
+      const arbitrarySettings: Settings = {
+        omicronSpacingUnitFactor: arbitraryOmicronSpacingUnitFactor,
+      }
+      const expectedOmicronSpacingUnit = 3
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { omicronSpacingUnit: actualOmicronSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedOmicronSpacingUnit, actualOmicronSpacingUnit)
+    }),
+  ]),
 ])

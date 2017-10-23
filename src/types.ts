@@ -31,4 +31,5 @@ export type Settings = {
   readonly fontSize?: NonnegativeRealNumberPixelLength
   readonly baselineGrid?: NonnegativeIntegerPixelLength
   readonly piSpacingUnitFactor?: NonnegativeRealNumber
+  readonly omicronSpacingUnitFactor?: NonnegativeRealNumber
 }
