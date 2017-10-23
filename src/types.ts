@@ -33,4 +33,5 @@ export type Settings = {
   readonly baselineGrid?: NonnegativeIntegerPixelLength
   readonly piSpacingUnitFactor?: NonnegativeRealNumber
   readonly omicronSpacingUnitFactor?: NonnegativeRealNumber
+  readonly xiSpacingUnitFactor?: NonnegativeRealNumber
 }
