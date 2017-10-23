@@ -41,6 +41,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedBaselineGrid, actualBaselineGrid)
     }),
+
+    it(`has default piSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedPiSpacingUnit = 2
+      // Excersise system
+      const sut: Configuration = configure()
+      const { piSpacingUnit: actualPiSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedPiSpacingUnit, actualPiSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [

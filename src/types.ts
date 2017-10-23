@@ -15,6 +15,7 @@ export type Configuration = {
   readonly fontSize: PixelCount
   readonly lineHeight: PixelCount
   readonly baselineGrid: PixelCount
+  readonly piSpacingUnit: PixelCount
 }
 
 export type PixelCount = NonnegativeRealNumber
