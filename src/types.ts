@@ -18,6 +18,7 @@ export type Configuration = {
   readonly piSpacingUnit: NonnegativeIntegerPixelLength
   readonly omicronSpacingUnit: NonnegativeIntegerPixelLength
   readonly xiSpacingUnit: NonnegativeIntegerPixelLength
+  readonly nuSpacingUnit: NonnegativeIntegerPixelLength
 }
 
 export type NonnegativeRealNumberPixelLength = NonnegativeRealNumber

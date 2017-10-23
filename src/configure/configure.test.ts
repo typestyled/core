@@ -71,6 +71,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedXiSpacingUnit, actualXiSpacingUnit)
     }),
+
+    it(`has default nuSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedNuSpacingUnit = 16
+      // Excersise system
+      const sut: Configuration = configure()
+      const { nuSpacingUnit: actualNuSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedNuSpacingUnit, actualNuSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [
