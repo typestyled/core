@@ -29,4 +29,5 @@ export type NonnegativeInteger = number
 export type Settings = {
   readonly fontSize?: NonnegativeIntegerPixel
   readonly baselineGrid?: NonnegativeIntegerPixel
+  readonly piSpacingUnitFactor?: NonnegativeRealNumber
 }

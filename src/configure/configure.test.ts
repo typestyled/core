@@ -92,4 +92,18 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedLineHeight, actualLineHeight)
     }),
   ]),
+
+  given(`a piSpacingUnitFactor setting`, [
+    it(`returns a configuration of piSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryPiSpacingUnitFactor = 0.15
+      const arbitrarySettings: Settings = { piSpacingUnitFactor: arbitraryPiSpacingUnitFactor }
+      const expectedPiSpacingUnit = 1
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { piSpacingUnit: actualPiSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedPiSpacingUnit, actualPiSpacingUnit)
+    }),
+  ]),
 ])
