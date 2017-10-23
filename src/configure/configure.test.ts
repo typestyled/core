@@ -47,10 +47,10 @@ export const testConfigure: Test = describe(`configure`, [
     it(`returns a configuration of fontSize`, ({ equal }) => {
       // Fixture setup
       const arbitraryFontSize = 13
-      const settings: Settings = { fontSize: arbitraryFontSize }
+      const arbitrarySettings: Settings = { fontSize: arbitraryFontSize }
       const expectedFontSize = arbitraryFontSize
       // Excersise system
-      const sut: Configuration = configure(settings)
+      const sut: Configuration = configure(arbitrarySettings)
       const { fontSize: actualFontSize } = sut
       // Verify outcome
       equal(expectedFontSize, actualFontSize)
@@ -59,10 +59,10 @@ export const testConfigure: Test = describe(`configure`, [
     it(`returns a configuration of lineHeight`, ({ equal }) => {
       // Fixture setup
       const arbitraryFontSize = 13
-      const settings: Settings = { fontSize: arbitraryFontSize }
+      const arbitrarySettings: Settings = { fontSize: arbitraryFontSize }
       const expectedLineHeight = 16
       // Excersise system
-      const sut: Configuration = configure(settings)
+      const sut: Configuration = configure(arbitrarySettings)
       const { lineHeight: actualLineHeight } = sut
       // Verify outcome
       equal(expectedLineHeight, actualLineHeight)
