@@ -54,5 +54,6 @@ export function configure(
     omicronSpacingUnit,
     xiSpacingUnit,
     nuSpacingUnit,
+    muSpacingUnit: 24,
   }
 }
