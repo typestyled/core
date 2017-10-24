@@ -66,5 +66,6 @@ export function configure(
     muSpacingUnit,
     lambdaSpacingUnit,
     kappaSpacingUnit,
+    iotaSpacingUnit: 48,
   }
 }

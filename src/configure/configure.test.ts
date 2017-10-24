@@ -111,6 +111,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedKappaSpacingUnit, actualKappaSpacingUnit)
     }),
+
+    it(`has default iotaSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedIotaSpacingUnit = 48
+      // Excersise system
+      const sut: Configuration = configure()
+      const { iotaSpacingUnit: actualIotaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedIotaSpacingUnit, actualIotaSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [
