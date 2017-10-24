@@ -72,5 +72,6 @@ export function configure(
     iotaSpacingUnit,
     thetaSpacingUnit,
     etaSpacingUnit,
+    zetaSpacingUnit: `72px`,
   }
 }

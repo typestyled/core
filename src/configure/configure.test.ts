@@ -141,6 +141,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedEtaSpacingUnit, actualEtaSpacingUnit)
     }),
+
+    it(`has default zetaSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedZetaSpacingUnit = `72px`
+      // Excersise system
+      const sut: Configuration = configure()
+      const { zetaSpacingUnit: actualZetaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedZetaSpacingUnit, actualZetaSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [
