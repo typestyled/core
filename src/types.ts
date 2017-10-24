@@ -12,31 +12,29 @@
  */
 
 export type Configuration = {
-  readonly fontSize: NonnegativeRealNumberPixelLength
-  readonly lineHeight: NonnegativeRealNumberPixelLength
-  readonly baselineGrid: NonnegativeIntegerPixelLength
-  readonly piSpacingUnit: NonnegativeIntegerPixelLength
-  readonly omicronSpacingUnit: NonnegativeIntegerPixelLength
-  readonly xiSpacingUnit: NonnegativeIntegerPixelLength
-  readonly nuSpacingUnit: NonnegativeIntegerPixelLength
-  readonly muSpacingUnit: NonnegativeIntegerPixelLength
-  readonly lambdaSpacingUnit: NonnegativeIntegerPixelLength
-  readonly kappaSpacingUnit: NonnegativeIntegerPixelLength
-  readonly iotaSpacingUnit: NonnegativeIntegerPixelLength
-  readonly thetaSpacingUnit: NonnegativeIntegerPixelLength
+  readonly fontSize: PixelLength
+  readonly lineHeight: PixelLength
+  readonly baselineGrid: PixelLength
+  readonly piSpacingUnit: PixelLength
+  readonly omicronSpacingUnit: PixelLength
+  readonly xiSpacingUnit: PixelLength
+  readonly nuSpacingUnit: PixelLength
+  readonly muSpacingUnit: PixelLength
+  readonly lambdaSpacingUnit: PixelLength
+  readonly kappaSpacingUnit: PixelLength
+  readonly iotaSpacingUnit: PixelLength
+  readonly thetaSpacingUnit: PixelLength
 }
 
-export type NonnegativeRealNumberPixelLength = NonnegativeRealNumber
+export type PixelLength = string
 
 export type NonnegativeIntegerPixelLength = NonnegativeInteger
-
-export type NonnegativeRealNumber = number
 
 export type NonnegativeInteger = number
 
 export type Settings = {
-  readonly fontSize?: NonnegativeRealNumberPixelLength
-  readonly baselineGrid?: NonnegativeIntegerPixelLength
+  readonly fontSize?: PixelLength
+  readonly baselineGrid?: PixelLength
   readonly piSpacingUnitFactor?: NonnegativeRealNumber
   readonly omicronSpacingUnitFactor?: NonnegativeRealNumber
   readonly xiSpacingUnitFactor?: NonnegativeRealNumber
@@ -47,3 +45,5 @@ export type Settings = {
   readonly iotaSpacingUnitFactor?: NonnegativeRealNumber
   readonly thetaSpacingUnitFactor?: NonnegativeRealNumber
 }
+
+export type NonnegativeRealNumber = number

@@ -11,17 +11,20 @@
  * This file provides functionality to compute line height.
  */
 
-import { NonnegativeIntegerPixelLength, NonnegativeRealNumberPixelLength } from '../types'
-
+import { PixelLength } from '../types'
 import { curry2 } from '@typed/functions'
+import { px } from 'csx/lib'
 
 export const computeLineHeight = curry2(function computeLineHeight(
-  baselineGrid: NonnegativeIntegerPixelLength,
-  fontSize: NonnegativeRealNumberPixelLength
-): NonnegativeRealNumberPixelLength {
-  let lineHeight: NonnegativeRealNumberPixelLength = baselineGrid
+  baselineGrid: PixelLength,
+  fontSize: PixelLength
+): PixelLength {
+  const unitlessBaselineGrid = parseFloat(baselineGrid)
+  const unitlessFontSize = parseFloat(fontSize)
 
-  while (lineHeight <= fontSize) lineHeight += baselineGrid
+  let unitlessLineHeight = unitlessBaselineGrid
 
-  return lineHeight
+  while (unitlessLineHeight <= unitlessFontSize) unitlessLineHeight += unitlessBaselineGrid
+
+  return px(unitlessLineHeight) as PixelLength
 })

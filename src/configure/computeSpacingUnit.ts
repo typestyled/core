@@ -11,13 +11,15 @@
  * This file provides functionality to compute spacing units.
  */
 
-import { NonnegativeIntegerPixelLength, NonnegativeRealNumber } from '../types'
+import { NonnegativeRealNumber, PixelLength } from '../types'
+import { curry2, pipe } from '@typed/functions'
 
-import { curry2 } from '@typed/functions'
+import { multiply } from '@typed/math'
+import { px } from 'csx/lib'
 
 export const computeSpacingUnit = curry2(function computeSpacingUnit(
-  baselineGrid: NonnegativeIntegerPixelLength,
+  baselineGrid: PixelLength,
   factor: NonnegativeRealNumber
-): NonnegativeIntegerPixelLength {
-  return Math.round(baselineGrid * factor)
+): PixelLength {
+  return pipe(parseFloat, multiply(factor), Math.round, px)(baselineGrid) as PixelLength
 })

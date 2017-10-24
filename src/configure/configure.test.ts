@@ -14,7 +14,7 @@ export const testConfigure: Test = describe(`configure`, [
   describe(`Configuration`, [
     it(`has default fontSize property`, ({ equal }) => {
       // Fixture setup
-      const expectedFontSize = 16
+      const expectedFontSize = `16px`
       // Excersise system
       const sut: Configuration = configure()
       const { fontSize: actualFontSize } = sut
@@ -24,7 +24,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default lineHeight property`, ({ equal }) => {
       // Fixture setup
-      const expectedLineHeight = 24
+      const expectedLineHeight = `24px`
       // Excersise system
       const sut: Configuration = configure()
       const { lineHeight: actualLineHeight } = sut
@@ -34,7 +34,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default baselineGrid property`, ({ equal }) => {
       // Fixture setup
-      const expectedBaselineGrid = 8
+      const expectedBaselineGrid = `8px`
       // Excersise system
       const sut: Configuration = configure()
       const { baselineGrid: actualBaselineGrid } = sut
@@ -44,7 +44,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default piSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedPiSpacingUnit = 2
+      const expectedPiSpacingUnit = `2px`
       // Excersise system
       const sut: Configuration = configure()
       const { piSpacingUnit: actualPiSpacingUnit } = sut
@@ -54,7 +54,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default omicronSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedOmicronSpacingUnit = 4
+      const expectedOmicronSpacingUnit = `4px`
       // Excersise system
       const sut: Configuration = configure()
       const { omicronSpacingUnit: actualOmicronSpacingUnit } = sut
@@ -64,7 +64,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default xiSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedXiSpacingUnit = 8
+      const expectedXiSpacingUnit = `8px`
       // Excersise system
       const sut: Configuration = configure()
       const { xiSpacingUnit: actualXiSpacingUnit } = sut
@@ -74,7 +74,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default nuSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedNuSpacingUnit = 16
+      const expectedNuSpacingUnit = `16px`
       // Excersise system
       const sut: Configuration = configure()
       const { nuSpacingUnit: actualNuSpacingUnit } = sut
@@ -84,7 +84,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default muSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedMuSpacingUnit = 24
+      const expectedMuSpacingUnit = `24px`
       // Excersise system
       const sut: Configuration = configure()
       const { muSpacingUnit: actualMuSpacingUnit } = sut
@@ -94,7 +94,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default lambdaSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedLambdaSpacingUnit = 32
+      const expectedLambdaSpacingUnit = `32px`
       // Excersise system
       const sut: Configuration = configure()
       const { lambdaSpacingUnit: actualLambdaSpacingUnit } = sut
@@ -104,7 +104,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default kappaSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedKappaSpacingUnit = 40
+      const expectedKappaSpacingUnit = `40px`
       // Excersise system
       const sut: Configuration = configure()
       const { kappaSpacingUnit: actualKappaSpacingUnit } = sut
@@ -114,7 +114,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default iotaSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedIotaSpacingUnit = 48
+      const expectedIotaSpacingUnit = `48px`
       // Excersise system
       const sut: Configuration = configure()
       const { iotaSpacingUnit: actualIotaSpacingUnit } = sut
@@ -124,7 +124,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default thetaSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedThetaSpacingUnit = 56
+      const expectedThetaSpacingUnit = `56px`
       // Excersise system
       const sut: Configuration = configure()
       const { thetaSpacingUnit: actualThetaSpacingUnit } = sut
@@ -136,7 +136,7 @@ export const testConfigure: Test = describe(`configure`, [
   given(`a fontSize setting`, [
     it(`returns a configuration of fontSize`, ({ equal }) => {
       // Fixture setup
-      const arbitraryFontSize = 13
+      const arbitraryFontSize = `13px`
       const arbitrarySettings: Settings = { fontSize: arbitraryFontSize }
       const expectedFontSize = arbitraryFontSize
       // Excersise system
@@ -148,9 +148,9 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`returns a configuration of lineHeight`, ({ equal }) => {
       // Fixture setup
-      const arbitraryFontSize = 13
+      const arbitraryFontSize = `13px`
       const arbitrarySettings: Settings = { fontSize: arbitraryFontSize }
-      const expectedLineHeight = 16
+      const expectedLineHeight = `16px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { lineHeight: actualLineHeight } = sut
@@ -162,9 +162,9 @@ export const testConfigure: Test = describe(`configure`, [
   given(`a baselineGrid setting`, [
     it(`returns a configuration of lineHeight`, ({ equal }) => {
       // Fixture setup
-      const arbitraryBaselineGrid = 3
+      const arbitraryBaselineGrid = `3px`
       const arbitrarySettings: Settings = { baselineGrid: arbitraryBaselineGrid }
-      const expectedLineHeight = 18
+      const expectedLineHeight = `18px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { lineHeight: actualLineHeight } = sut
@@ -178,7 +178,7 @@ export const testConfigure: Test = describe(`configure`, [
       // Fixture setup
       const arbitraryPiSpacingUnitFactor = 0.15
       const arbitrarySettings: Settings = { piSpacingUnitFactor: arbitraryPiSpacingUnitFactor }
-      const expectedPiSpacingUnit = 1
+      const expectedPiSpacingUnit = `1px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { piSpacingUnit: actualPiSpacingUnit } = sut
@@ -194,7 +194,7 @@ export const testConfigure: Test = describe(`configure`, [
       const arbitrarySettings: Settings = {
         omicronSpacingUnitFactor: arbitraryOmicronSpacingUnitFactor,
       }
-      const expectedOmicronSpacingUnit = 3
+      const expectedOmicronSpacingUnit = `3px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { omicronSpacingUnit: actualOmicronSpacingUnit } = sut
@@ -208,7 +208,7 @@ export const testConfigure: Test = describe(`configure`, [
       // Fixture setup
       const arbitraryXiSpacingUnitFactor = 0.9
       const arbitrarySettings: Settings = { xiSpacingUnitFactor: arbitraryXiSpacingUnitFactor }
-      const expectedXiSpacingUnit = 7
+      const expectedXiSpacingUnit = `7px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { xiSpacingUnit: actualXiSpacingUnit } = sut
@@ -222,7 +222,7 @@ export const testConfigure: Test = describe(`configure`, [
       // Fixture setup
       const arbitraryNuSpacingUnitFactor = 1.9
       const arbitrarySettings: Settings = { nuSpacingUnitFactor: arbitraryNuSpacingUnitFactor }
-      const expectedNuSpacingUnit = 15
+      const expectedNuSpacingUnit = `15px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { nuSpacingUnit: actualNuSpacingUnit } = sut
@@ -236,7 +236,7 @@ export const testConfigure: Test = describe(`configure`, [
       // Fixture setup
       const arbitraryMuSpacingUnitFactor = 2.9
       const arbitrarySettings: Settings = { muSpacingUnitFactor: arbitraryMuSpacingUnitFactor }
-      const expectedMuSpacingUnit = 23
+      const expectedMuSpacingUnit = `23px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { muSpacingUnit: actualMuSpacingUnit } = sut
@@ -252,7 +252,7 @@ export const testConfigure: Test = describe(`configure`, [
       const arbitrarySettings: Settings = {
         lambdaSpacingUnitFactor: arbitraryLambdaSpacingUnitFactor,
       }
-      const expectedLambdaSpacingUnit = 31
+      const expectedLambdaSpacingUnit = `31px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { lambdaSpacingUnit: actualLambdaSpacingUnit } = sut
@@ -268,7 +268,7 @@ export const testConfigure: Test = describe(`configure`, [
       const arbitrarySettings: Settings = {
         kappaSpacingUnitFactor: arbitraryKappaSpacingUnitFactor,
       }
-      const expectedKappaSpacingUnit = 39
+      const expectedKappaSpacingUnit = `39px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { kappaSpacingUnit: actualKappaSpacingUnit } = sut
@@ -284,7 +284,7 @@ export const testConfigure: Test = describe(`configure`, [
       const arbitrarySettings: Settings = {
         iotaSpacingUnitFactor: arbitraryIotaSpacingUnitFactor,
       }
-      const expectedIotaSpacingUnit = 47
+      const expectedIotaSpacingUnit = `47px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { iotaSpacingUnit: actualIotaSpacingUnit } = sut
@@ -300,7 +300,7 @@ export const testConfigure: Test = describe(`configure`, [
       const arbitrarySettings: Settings = {
         thetaSpacingUnitFactor: arbitraryThetaSpacingUnitFactor,
       }
-      const expectedThetaSpacingUnit = 55
+      const expectedThetaSpacingUnit = `55px`
       // Excersise system
       const sut: Configuration = configure(arbitrarySettings)
       const { thetaSpacingUnit: actualThetaSpacingUnit } = sut
