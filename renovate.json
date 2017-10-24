@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "config:js-lib"
+  ],
+  "baseBranch": "next",
+  "schedule": [
+    "every weekend"
+  ]
+}
