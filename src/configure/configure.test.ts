@@ -91,6 +91,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedMuSpacingUnit, actualMuSpacingUnit)
     }),
+
+    it(`has default lambdaSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedLambdaSpacingUnit = 32
+      // Excersise system
+      const sut: Configuration = configure()
+      const { lambdaSpacingUnit: actualLambdaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedLambdaSpacingUnit, actualLambdaSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [
