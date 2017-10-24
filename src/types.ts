@@ -30,6 +30,7 @@ export type Configuration = {
   readonly deltaSpacingUnit: PixelLength
   readonly gammaSpacingUnit: PixelLength
   readonly betaSpacingUnit: PixelLength
+  readonly alphaSpacingUnit: PixelLength
 }
 
 export type PixelLength = string

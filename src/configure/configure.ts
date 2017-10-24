@@ -92,5 +92,6 @@ export function configure(
     deltaSpacingUnit,
     gammaSpacingUnit,
     betaSpacingUnit,
+    alphaSpacingUnit: `112px`,
   }
 }
