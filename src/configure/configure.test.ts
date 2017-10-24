@@ -243,7 +243,7 @@ export const testConfigure: Test = describe(`configure`, [
     }),
   ]),
 
-  given(`an xiSpacingUnitFactor setting`, [
+  given(`a xiSpacingUnitFactor setting`, [
     it(`returns a configuration of xiSpacingUnit`, ({ equal }) => {
       // Fixture setup
       const arbitraryXiSpacingUnitFactor = 0.9
@@ -257,7 +257,7 @@ export const testConfigure: Test = describe(`configure`, [
     }),
   ]),
 
-  given(`an nuSpacingUnitFactor setting`, [
+  given(`a nuSpacingUnitFactor setting`, [
     it(`returns a configuration of nuSpacingUnit`, ({ equal }) => {
       // Fixture setup
       const arbitraryNuSpacingUnitFactor = 1.9
@@ -271,7 +271,7 @@ export const testConfigure: Test = describe(`configure`, [
     }),
   ]),
 
-  given(`an muSpacingUnitFactor setting`, [
+  given(`a muSpacingUnitFactor setting`, [
     it(`returns a configuration of muSpacingUnit`, ({ equal }) => {
       // Fixture setup
       const arbitraryMuSpacingUnitFactor = 2.9
@@ -285,7 +285,7 @@ export const testConfigure: Test = describe(`configure`, [
     }),
   ]),
 
-  given(`an lambdaSpacingUnitFactor setting`, [
+  given(`a lambdaSpacingUnitFactor setting`, [
     it(`returns a configuration of lambdaSpacingUnit`, ({ equal }) => {
       // Fixture setup
       const arbitraryLambdaSpacingUnitFactor = 3.9
@@ -301,7 +301,7 @@ export const testConfigure: Test = describe(`configure`, [
     }),
   ]),
 
-  given(`an kappaSpacingUnitFactor setting`, [
+  given(`a kappaSpacingUnitFactor setting`, [
     it(`returns a configuration of kappaSpacingUnit`, ({ equal }) => {
       // Fixture setup
       const arbitraryKappaSpacingUnitFactor = 4.9
@@ -333,7 +333,7 @@ export const testConfigure: Test = describe(`configure`, [
     }),
   ]),
 
-  given(`an thetaSpacingUnitFactor setting`, [
+  given(`a thetaSpacingUnitFactor setting`, [
     it(`returns a configuration of thetaSpacingUnit`, ({ equal }) => {
       // Fixture setup
       const arbitraryThetaSpacingUnitFactor = 6.9
@@ -365,7 +365,7 @@ export const testConfigure: Test = describe(`configure`, [
     }),
   ]),
 
-  given(`an zetaSpacingUnitFactor setting`, [
+  given(`a zetaSpacingUnitFactor setting`, [
     it(`returns a configuration of zetaSpacingUnit`, ({ equal }) => {
       // Fixture setup
       const arbitraryZetaSpacingUnitFactor = 8.9
@@ -397,7 +397,7 @@ export const testConfigure: Test = describe(`configure`, [
     }),
   ]),
 
-  given(`an deltaSpacingUnitFactor setting`, [
+  given(`a deltaSpacingUnitFactor setting`, [
     it(`returns a configuration of deltaSpacingUnit`, ({ equal }) => {
       // Fixture setup
       const arbitraryDeltaSpacingUnitFactor = 10.9
