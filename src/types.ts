@@ -53,6 +53,7 @@ export type Settings = {
   readonly zetaSpacingUnitFactor?: NonnegativeRealNumber
   readonly epsilonSpacingUnitFactor?: NonnegativeRealNumber
   readonly deltaSpacingUnitFactor?: NonnegativeRealNumber
+  readonly gammaSpacingUnitFactor?: NonnegativeRealNumber
 }
 
 export type NonnegativeRealNumber = number

@@ -31,6 +31,7 @@ const DEFAULT_ETA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 8
 const DEFAULT_ZETA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 9
 const DEFAULT_EPSILON_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 10
 const DEFAULT_DELTA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 11
+const DEFAULT_GAMMA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 12
 
 export function configure(
   {
@@ -49,6 +50,7 @@ export function configure(
     zetaSpacingUnitFactor = DEFAULT_ZETA_SPACING_UNIT_FACTOR,
     epsilonSpacingUnitFactor = DEFAULT_EPSILON_SPACING_UNIT_FACTOR,
     deltaSpacingUnitFactor = DEFAULT_DELTA_SPACING_UNIT_FACTOR,
+    gammaSpacingUnitFactor = DEFAULT_GAMMA_SPACING_UNIT_FACTOR,
   }: Settings = {}
 ): Configuration {
   const lineHeight = computeLineHeight(baselineGrid, fontSize)
@@ -66,6 +68,7 @@ export function configure(
   const zetaSpacingUnit = baselineSpacingUnit(zetaSpacingUnitFactor)
   const epsilonSpacingUnit = baselineSpacingUnit(epsilonSpacingUnitFactor)
   const deltaSpacingUnit = baselineSpacingUnit(deltaSpacingUnitFactor)
+  const gammaSpacingUnit = baselineSpacingUnit(gammaSpacingUnitFactor)
 
   return {
     fontSize,
@@ -84,6 +87,6 @@ export function configure(
     zetaSpacingUnit,
     epsilonSpacingUnit,
     deltaSpacingUnit,
-    gammaSpacingUnit: `96px`,
+    gammaSpacingUnit,
   }
 }

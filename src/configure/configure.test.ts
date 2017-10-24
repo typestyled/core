@@ -422,4 +422,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedDeltaSpacingUnit, actualDeltaSpacingUnit)
     }),
   ]),
+
+  given(`a gammaSpacingUnitFactor setting`, [
+    it(`returns a configuration of gammaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryGammaSpacingUnitFactor = 11.9
+      const arbitrarySettings: Settings = {
+        gammaSpacingUnitFactor: arbitraryGammaSpacingUnitFactor,
+      }
+      const expectedGammaSpacingUnit = `95px`
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { gammaSpacingUnit: actualGammaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedGammaSpacingUnit, actualGammaSpacingUnit)
+    }),
+  ]),
 ])
