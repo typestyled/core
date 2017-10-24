@@ -240,4 +240,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedLambdaSpacingUnit, actualLambdaSpacingUnit)
     }),
   ]),
+
+  given(`an kappaSpacingUnitFactor setting`, [
+    it(`returns a configuration of kappaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryKappaSpacingUnitFactor = 4.9
+      const arbitrarySettings: Settings = {
+        kappaSpacingUnitFactor: arbitraryKappaSpacingUnitFactor,
+      }
+      const expectedKappaSpacingUnit = 39
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { kappaSpacingUnit: actualKappaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedKappaSpacingUnit, actualKappaSpacingUnit)
+    }),
+  ]),
 ])

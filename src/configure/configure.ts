@@ -30,6 +30,7 @@ const DEFAULT_XI_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 1
 const DEFAULT_NU_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 2
 const DEFAULT_MU_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 3
 const DEFAULT_LAMBDA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 4
+const DEFAULT_KAPPA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 5
 
 export function configure(
   {
@@ -41,6 +42,7 @@ export function configure(
     nuSpacingUnitFactor = DEFAULT_NU_SPACING_UNIT_FACTOR,
     muSpacingUnitFactor = DEFAULT_MU_SPACING_UNIT_FACTOR,
     lambdaSpacingUnitFactor = DEFAULT_LAMBDA_SPACING_UNIT_FACTOR,
+    kappaSpacingUnitFactor = DEFAULT_KAPPA_SPACING_UNIT_FACTOR,
   }: Settings = {}
 ): Configuration {
   const lineHeight = computeLineHeight(baselineGrid, fontSize)
@@ -51,6 +53,7 @@ export function configure(
   const nuSpacingUnit = baselineSpacingUnit(nuSpacingUnitFactor)
   const muSpacingUnit = baselineSpacingUnit(muSpacingUnitFactor)
   const lambdaSpacingUnit = baselineSpacingUnit(lambdaSpacingUnitFactor)
+  const kappaSpacingUnit = baselineSpacingUnit(kappaSpacingUnitFactor)
 
   return {
     fontSize,
@@ -62,6 +65,6 @@ export function configure(
     nuSpacingUnit,
     muSpacingUnit,
     lambdaSpacingUnit,
-    kappaSpacingUnit: 40,
+    kappaSpacingUnit,
   }
 }
