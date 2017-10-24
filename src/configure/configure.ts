@@ -31,6 +31,7 @@ const DEFAULT_NU_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 2
 const DEFAULT_MU_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 3
 const DEFAULT_LAMBDA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 4
 const DEFAULT_KAPPA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 5
+const DEFAULT_IOTA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 6
 
 export function configure(
   {
@@ -43,6 +44,7 @@ export function configure(
     muSpacingUnitFactor = DEFAULT_MU_SPACING_UNIT_FACTOR,
     lambdaSpacingUnitFactor = DEFAULT_LAMBDA_SPACING_UNIT_FACTOR,
     kappaSpacingUnitFactor = DEFAULT_KAPPA_SPACING_UNIT_FACTOR,
+    iotaSpacingUnitFactor = DEFAULT_IOTA_SPACING_UNIT_FACTOR,
   }: Settings = {}
 ): Configuration {
   const lineHeight = computeLineHeight(baselineGrid, fontSize)
@@ -54,6 +56,7 @@ export function configure(
   const muSpacingUnit = baselineSpacingUnit(muSpacingUnitFactor)
   const lambdaSpacingUnit = baselineSpacingUnit(lambdaSpacingUnitFactor)
   const kappaSpacingUnit = baselineSpacingUnit(kappaSpacingUnitFactor)
+  const iotaSpacingUnit = baselineSpacingUnit(iotaSpacingUnitFactor)
 
   return {
     fontSize,
@@ -66,6 +69,6 @@ export function configure(
     muSpacingUnit,
     lambdaSpacingUnit,
     kappaSpacingUnit,
-    iotaSpacingUnit: 48,
+    iotaSpacingUnit,
   }
 }

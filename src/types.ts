@@ -43,4 +43,5 @@ export type Settings = {
   readonly muSpacingUnitFactor?: NonnegativeRealNumber
   readonly lambdaSpacingUnitFactor?: NonnegativeRealNumber
   readonly kappaSpacingUnitFactor?: NonnegativeRealNumber
+  readonly iotaSpacingUnitFactor?: NonnegativeRealNumber
 }

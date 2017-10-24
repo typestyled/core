@@ -266,4 +266,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedKappaSpacingUnit, actualKappaSpacingUnit)
     }),
   ]),
+
+  given(`an iotaSpacingUnitFactor setting`, [
+    it(`returns a configuration of iotaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryIotaSpacingUnitFactor = 5.9
+      const arbitrarySettings: Settings = {
+        iotaSpacingUnitFactor: arbitraryIotaSpacingUnitFactor,
+      }
+      const expectedIotaSpacingUnit = 47
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { iotaSpacingUnit: actualIotaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedIotaSpacingUnit, actualIotaSpacingUnit)
+    }),
+  ]),
 ])
