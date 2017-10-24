@@ -171,6 +171,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedDeltaSpacingUnit, actualDeltaSpacingUnit)
     }),
+
+    it(`has default gammaSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedGammaSpacingUnit = `96px`
+      // Excersise system
+      const sut: Configuration = configure()
+      const { gammaSpacingUnit: actualGammaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedGammaSpacingUnit, actualGammaSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [
