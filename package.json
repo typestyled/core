@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/typestyled/core#readme",
   "scripts": {
-    "build": "yarn clean && tsc -p . && tsc -p tsconfig.es2015.json",
+    "build": "yarn clean && yarn build:commonjs && yarn build:es2015",
+    "build:es2015": "tsc -p tsconfig.es2015.json",
+    "build:commonjs": "tsc -p .",
     "clean": "rimraf ./lib*",
     "lint": "yarn lint:import && yarn lint:prettier",
     "lint:import": "./node_modules/.bin/import-sort --overwrite 'src/' || true",
