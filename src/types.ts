@@ -21,6 +21,7 @@ export type Configuration = {
   readonly nuSpacingUnit: NonnegativeIntegerPixelLength
   readonly muSpacingUnit: NonnegativeIntegerPixelLength
   readonly lambdaSpacingUnit: NonnegativeIntegerPixelLength
+  readonly kappaSpacingUnit: NonnegativeIntegerPixelLength
 }
 
 export type NonnegativeRealNumberPixelLength = NonnegativeRealNumber

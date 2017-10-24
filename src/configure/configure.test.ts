@@ -101,6 +101,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedLambdaSpacingUnit, actualLambdaSpacingUnit)
     }),
+
+    it(`has default kappaSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedKappaSpacingUnit = 40
+      // Excersise system
+      const sut: Configuration = configure()
+      const { kappaSpacingUnit: actualKappaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedKappaSpacingUnit, actualKappaSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [

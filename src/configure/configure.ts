@@ -62,5 +62,6 @@ export function configure(
     nuSpacingUnit,
     muSpacingUnit,
     lambdaSpacingUnit,
+    kappaSpacingUnit: 40,
   }
 }
