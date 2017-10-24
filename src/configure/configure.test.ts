@@ -181,6 +181,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedGammaSpacingUnit, actualGammaSpacingUnit)
     }),
+
+    it(`has default betaSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedBetaSpacingUnit = `104px`
+      // Excersise system
+      const sut: Configuration = configure()
+      const { betaSpacingUnit: actualBetaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedBetaSpacingUnit, actualBetaSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [
