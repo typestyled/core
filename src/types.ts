@@ -27,6 +27,7 @@ export type Configuration = {
   readonly etaSpacingUnit: PixelLength
   readonly zetaSpacingUnit: PixelLength
   readonly epsilonSpacingUnit: PixelLength
+  readonly deltaSpacingUnit: PixelLength
 }
 
 export type PixelLength = string

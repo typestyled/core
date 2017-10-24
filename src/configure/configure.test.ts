@@ -161,6 +161,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedEpsilonSpacingUnit, actualEpsilonSpacingUnit)
     }),
+
+    it(`has default deltaSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedDeltaSpacingUnit = `88px`
+      // Excersise system
+      const sut: Configuration = configure()
+      const { deltaSpacingUnit: actualDeltaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedDeltaSpacingUnit, actualDeltaSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [

@@ -80,5 +80,6 @@ export function configure(
     etaSpacingUnit,
     zetaSpacingUnit,
     epsilonSpacingUnit,
+    deltaSpacingUnit: `88px`,
   }
 }
