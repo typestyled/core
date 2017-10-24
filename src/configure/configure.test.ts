@@ -474,4 +474,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedBetaSpacingUnit, actualBetaSpacingUnit)
     }),
   ]),
+
+  given(`a alphaSpacingUnitFactor setting`, [
+    it(`returns a configuration of alphaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryAlphaSpacingUnitFactor = 13.9
+      const arbitrarySettings: Settings = {
+        alphaSpacingUnitFactor: arbitraryAlphaSpacingUnitFactor,
+      }
+      const expectedAlphaSpacingUnit = `111px`
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { alphaSpacingUnit: actualAlphaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedAlphaSpacingUnit, actualAlphaSpacingUnit)
+    }),
+  ]),
 ])
