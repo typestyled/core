@@ -190,4 +190,18 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedNuSpacingUnit, actualNuSpacingUnit)
     }),
   ]),
+
+  given(`an muSpacingUnitFactor setting`, [
+    it(`returns a configuration of muSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryMuSpacingUnitFactor = 2.9
+      const arbitrarySettings: Settings = { muSpacingUnitFactor: arbitraryMuSpacingUnitFactor }
+      const expectedMuSpacingUnit = 23
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { muSpacingUnit: actualMuSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedMuSpacingUnit, actualMuSpacingUnit)
+    }),
+  ]),
 ])
