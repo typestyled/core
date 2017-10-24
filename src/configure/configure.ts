@@ -29,6 +29,7 @@ const DEFAULT_IOTA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 6
 const DEFAULT_THETA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 7
 const DEFAULT_ETA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 8
 const DEFAULT_ZETA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 9
+const DEFAULT_EPSILON_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 10
 
 export function configure(
   {
@@ -45,6 +46,7 @@ export function configure(
     thetaSpacingUnitFactor = DEFAULT_THETA_SPACING_UNIT_FACTOR,
     etaSpacingUnitFactor = DEFAULT_ETA_SPACING_UNIT_FACTOR,
     zetaSpacingUnitFactor = DEFAULT_ZETA_SPACING_UNIT_FACTOR,
+    epsilonSpacingUnitFactor = DEFAULT_EPSILON_SPACING_UNIT_FACTOR,
   }: Settings = {}
 ): Configuration {
   const lineHeight = computeLineHeight(baselineGrid, fontSize)
@@ -60,6 +62,7 @@ export function configure(
   const thetaSpacingUnit = baselineSpacingUnit(thetaSpacingUnitFactor)
   const etaSpacingUnit = baselineSpacingUnit(etaSpacingUnitFactor)
   const zetaSpacingUnit = baselineSpacingUnit(zetaSpacingUnitFactor)
+  const epsilonSpacingUnit = baselineSpacingUnit(epsilonSpacingUnitFactor)
 
   return {
     fontSize,
@@ -76,6 +79,6 @@ export function configure(
     thetaSpacingUnit,
     etaSpacingUnit,
     zetaSpacingUnit,
-    epsilonSpacingUnit: `80px`,
+    epsilonSpacingUnit,
   }
 }

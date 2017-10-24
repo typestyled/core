@@ -370,4 +370,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedZetaSpacingUnit, actualZetaSpacingUnit)
     }),
   ]),
+
+  given(`an epsilonSpacingUnitFactor setting`, [
+    it(`returns a configuration of epsilonSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryEpsilonSpacingUnitFactor = 9.9
+      const arbitrarySettings: Settings = {
+        epsilonSpacingUnitFactor: arbitraryEpsilonSpacingUnitFactor,
+      }
+      const expectedEpsilonSpacingUnit = `79px`
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { epsilonSpacingUnit: actualEpsilonSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedEpsilonSpacingUnit, actualEpsilonSpacingUnit)
+    }),
+  ]),
 ])
