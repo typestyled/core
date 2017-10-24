@@ -396,4 +396,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedEpsilonSpacingUnit, actualEpsilonSpacingUnit)
     }),
   ]),
+
+  given(`an deltaSpacingUnitFactor setting`, [
+    it(`returns a configuration of deltaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryDeltaSpacingUnitFactor = 10.9
+      const arbitrarySettings: Settings = {
+        deltaSpacingUnitFactor: arbitraryDeltaSpacingUnitFactor,
+      }
+      const expectedDeltaSpacingUnit = `87px`
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { deltaSpacingUnit: actualDeltaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedDeltaSpacingUnit, actualDeltaSpacingUnit)
+    }),
+  ]),
 ])
