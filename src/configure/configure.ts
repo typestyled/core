@@ -29,6 +29,7 @@ const DEFAULT_OMICRON_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 0.5
 const DEFAULT_XI_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 1
 const DEFAULT_NU_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 2
 const DEFAULT_MU_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 3
+const DEFAULT_LAMBDA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 4
 
 export function configure(
   {
@@ -39,6 +40,7 @@ export function configure(
     xiSpacingUnitFactor = DEFAULT_XI_SPACING_UNIT_FACTOR,
     nuSpacingUnitFactor = DEFAULT_NU_SPACING_UNIT_FACTOR,
     muSpacingUnitFactor = DEFAULT_MU_SPACING_UNIT_FACTOR,
+    lambdaSpacingUnitFactor = DEFAULT_LAMBDA_SPACING_UNIT_FACTOR,
   }: Settings = {}
 ): Configuration {
   const lineHeight = computeLineHeight(baselineGrid, fontSize)
@@ -48,6 +50,7 @@ export function configure(
   const xiSpacingUnit = baselineSpacingUnit(xiSpacingUnitFactor)
   const nuSpacingUnit = baselineSpacingUnit(nuSpacingUnitFactor)
   const muSpacingUnit = baselineSpacingUnit(muSpacingUnitFactor)
+  const lambdaSpacingUnit = baselineSpacingUnit(lambdaSpacingUnitFactor)
 
   return {
     fontSize,
@@ -58,6 +61,6 @@ export function configure(
     xiSpacingUnit,
     nuSpacingUnit,
     muSpacingUnit,
-    lambdaSpacingUnit: 32,
+    lambdaSpacingUnit,
   }
 }

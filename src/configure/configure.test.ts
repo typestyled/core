@@ -214,4 +214,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedMuSpacingUnit, actualMuSpacingUnit)
     }),
   ]),
+
+  given(`an lambdaSpacingUnitFactor setting`, [
+    it(`returns a configuration of lambdaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryLambdaSpacingUnitFactor = 3.9
+      const arbitrarySettings: Settings = {
+        lambdaSpacingUnitFactor: arbitraryLambdaSpacingUnitFactor,
+      }
+      const expectedLambdaSpacingUnit = 31
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { lambdaSpacingUnit: actualLambdaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedLambdaSpacingUnit, actualLambdaSpacingUnit)
+    }),
+  ]),
 ])
