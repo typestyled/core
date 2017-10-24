@@ -27,7 +27,7 @@ const DEFAULT_BASELINE_GRID: NonnegativeIntegerPixelLength = 8
 const DEFAULT_PI_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 0.25
 const DEFAULT_OMICRON_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 0.5
 const DEFAULT_XI_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 1
-const DEFAULT_NU_SPACING_UNIT: NonnegativeIntegerPixelLength = 16
+const DEFAULT_NU_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 2
 
 export function configure(
   {
@@ -36,6 +36,7 @@ export function configure(
     piSpacingUnitFactor = DEFAULT_PI_SPACING_UNIT_FACTOR,
     omicronSpacingUnitFactor = DEFAULT_OMICRON_SPACING_UNIT_FACTOR,
     xiSpacingUnitFactor = DEFAULT_XI_SPACING_UNIT_FACTOR,
+    nuSpacingUnitFactor = DEFAULT_NU_SPACING_UNIT_FACTOR,
   }: Settings = {}
 ): Configuration {
   const lineHeight = computeLineHeight(baselineGrid, fontSize)
@@ -43,6 +44,7 @@ export function configure(
   const piSpacingUnit = baselineSpacingUnit(piSpacingUnitFactor)
   const omicronSpacingUnit = baselineSpacingUnit(omicronSpacingUnitFactor)
   const xiSpacingUnit = baselineSpacingUnit(xiSpacingUnitFactor)
+  const nuSpacingUnit = baselineSpacingUnit(nuSpacingUnitFactor)
 
   return {
     fontSize,
@@ -51,6 +53,6 @@ export function configure(
     piSpacingUnit,
     omicronSpacingUnit,
     xiSpacingUnit,
-    nuSpacingUnit: DEFAULT_NU_SPACING_UNIT,
+    nuSpacingUnit,
   }
 }

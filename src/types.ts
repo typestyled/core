@@ -35,4 +35,5 @@ export type Settings = {
   readonly piSpacingUnitFactor?: NonnegativeRealNumber
   readonly omicronSpacingUnitFactor?: NonnegativeRealNumber
   readonly xiSpacingUnitFactor?: NonnegativeRealNumber
+  readonly nuSpacingUnitFactor?: NonnegativeRealNumber
 }

@@ -166,4 +166,18 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedXiSpacingUnit, actualXiSpacingUnit)
     }),
   ]),
+
+  given(`an nuSpacingUnitFactor setting`, [
+    it(`returns a configuration of nuSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryNuSpacingUnitFactor = 1.9
+      const arbitrarySettings: Settings = { nuSpacingUnitFactor: arbitraryNuSpacingUnitFactor }
+      const expectedNuSpacingUnit = 15
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { nuSpacingUnit: actualNuSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedNuSpacingUnit, actualNuSpacingUnit)
+    }),
+  ]),
 ])
