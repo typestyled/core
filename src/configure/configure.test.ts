@@ -448,4 +448,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedGammaSpacingUnit, actualGammaSpacingUnit)
     }),
   ]),
+
+  given(`a betaSpacingUnitFactor setting`, [
+    it(`returns a configuration of betaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryBetaSpacingUnitFactor = 12.9
+      const arbitrarySettings: Settings = {
+        betaSpacingUnitFactor: arbitraryBetaSpacingUnitFactor,
+      }
+      const expectedBetaSpacingUnit = `103px`
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { betaSpacingUnit: actualBetaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedBetaSpacingUnit, actualBetaSpacingUnit)
+    }),
+  ]),
 ])
