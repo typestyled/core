@@ -23,6 +23,7 @@ export type Configuration = {
   readonly lambdaSpacingUnit: NonnegativeIntegerPixelLength
   readonly kappaSpacingUnit: NonnegativeIntegerPixelLength
   readonly iotaSpacingUnit: NonnegativeIntegerPixelLength
+  readonly thetaSpacingUnit: NonnegativeIntegerPixelLength
 }
 
 export type NonnegativeRealNumberPixelLength = NonnegativeRealNumber
@@ -44,4 +45,5 @@ export type Settings = {
   readonly lambdaSpacingUnitFactor?: NonnegativeRealNumber
   readonly kappaSpacingUnitFactor?: NonnegativeRealNumber
   readonly iotaSpacingUnitFactor?: NonnegativeRealNumber
+  readonly thetaSpacingUnitFactor?: NonnegativeRealNumber
 }

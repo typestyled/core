@@ -121,6 +121,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedIotaSpacingUnit, actualIotaSpacingUnit)
     }),
+
+    it(`has default thetaSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedThetaSpacingUnit = 56
+      // Excersise system
+      const sut: Configuration = configure()
+      const { thetaSpacingUnit: actualThetaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedThetaSpacingUnit, actualThetaSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [
@@ -280,6 +290,22 @@ export const testConfigure: Test = describe(`configure`, [
       const { iotaSpacingUnit: actualIotaSpacingUnit } = sut
       // Verify outcome
       equal(expectedIotaSpacingUnit, actualIotaSpacingUnit)
+    }),
+  ]),
+
+  given(`an thetaSpacingUnitFactor setting`, [
+    it(`returns a configuration of thetaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryThetaSpacingUnitFactor = 6.9
+      const arbitrarySettings: Settings = {
+        thetaSpacingUnitFactor: arbitraryThetaSpacingUnitFactor,
+      }
+      const expectedThetaSpacingUnit = 55
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { thetaSpacingUnit: actualThetaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedThetaSpacingUnit, actualThetaSpacingUnit)
     }),
   ]),
 ])
