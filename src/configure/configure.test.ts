@@ -151,6 +151,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedZetaSpacingUnit, actualZetaSpacingUnit)
     }),
+
+    it(`has default epsilonSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedEpsilonSpacingUnit = `80px`
+      // Excersise system
+      const sut: Configuration = configure()
+      const { epsilonSpacingUnit: actualEpsilonSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedEpsilonSpacingUnit, actualEpsilonSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [

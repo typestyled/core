@@ -76,5 +76,6 @@ export function configure(
     thetaSpacingUnit,
     etaSpacingUnit,
     zetaSpacingUnit,
+    epsilonSpacingUnit: `80px`,
   }
 }
