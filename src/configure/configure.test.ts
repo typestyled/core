@@ -344,4 +344,20 @@ export const testConfigure: Test = describe(`configure`, [
       equal(expectedEtaSpacingUnit, actualEtaSpacingUnit)
     }),
   ]),
+
+  given(`an zetaSpacingUnitFactor setting`, [
+    it(`returns a configuration of zetaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryZetaSpacingUnitFactor = 8.9
+      const arbitrarySettings: Settings = {
+        zetaSpacingUnitFactor: arbitraryZetaSpacingUnitFactor,
+      }
+      const expectedZetaSpacingUnit = `71px`
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { zetaSpacingUnit: actualZetaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedZetaSpacingUnit, actualZetaSpacingUnit)
+    }),
+  ]),
 ])

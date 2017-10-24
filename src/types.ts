@@ -47,6 +47,7 @@ export type Settings = {
   readonly iotaSpacingUnitFactor?: NonnegativeRealNumber
   readonly thetaSpacingUnitFactor?: NonnegativeRealNumber
   readonly etaSpacingUnitFactor?: NonnegativeRealNumber
+  readonly zetaSpacingUnitFactor?: NonnegativeRealNumber
 }
 
 export type NonnegativeRealNumber = number
