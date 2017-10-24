@@ -26,7 +26,7 @@
     "lint": "yarn lint:import && yarn lint:prettier",
     "lint:import": "./node_modules/.bin/import-sort --overwrite 'src/' || true",
     "lint:prettier": "./node_modules/.bin/prettier --write --print-width 100 --tab-width 2 --no-semi --single-quote --trailing-comma es5 --parser typescript 'src/**/*.ts'",
-    "postversion": "git push --folow-tags && npm publish --access=public",
+    "postversion": "git push --follow-tags && npm publish --access=public",
     "precommit": "lint-staged",
     "preversion": "yarn test",
     "release:major": "npm version major -m 'Release major v%s'",
