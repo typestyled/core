@@ -134,7 +134,7 @@ export const testConfigure: Test = describe(`configure`, [
 
     it(`has default etaSpacingUnit property`, ({ equal }) => {
       // Fixture setup
-      const expectedEtaSpacingUnit = `60px`
+      const expectedEtaSpacingUnit = `64px`
       // Excersise system
       const sut: Configuration = configure()
       const { etaSpacingUnit: actualEtaSpacingUnit } = sut
@@ -316,6 +316,22 @@ export const testConfigure: Test = describe(`configure`, [
       const { thetaSpacingUnit: actualThetaSpacingUnit } = sut
       // Verify outcome
       equal(expectedThetaSpacingUnit, actualThetaSpacingUnit)
+    }),
+  ]),
+
+  given(`an etaSpacingUnitFactor setting`, [
+    it(`returns a configuration of etaSpacingUnit`, ({ equal }) => {
+      // Fixture setup
+      const arbitraryEtaSpacingUnitFactor = 7.9
+      const arbitrarySettings: Settings = {
+        etaSpacingUnitFactor: arbitraryEtaSpacingUnitFactor,
+      }
+      const expectedEtaSpacingUnit = `63px`
+      // Excersise system
+      const sut: Configuration = configure(arbitrarySettings)
+      const { etaSpacingUnit: actualEtaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedEtaSpacingUnit, actualEtaSpacingUnit)
     }),
   ]),
 ])
