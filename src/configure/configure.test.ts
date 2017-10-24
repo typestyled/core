@@ -131,6 +131,16 @@ export const testConfigure: Test = describe(`configure`, [
       // Verify outcome
       equal(expectedThetaSpacingUnit, actualThetaSpacingUnit)
     }),
+
+    it(`has default etaSpacingUnit property`, ({ equal }) => {
+      // Fixture setup
+      const expectedEtaSpacingUnit = `60px`
+      // Excersise system
+      const sut: Configuration = configure()
+      const { etaSpacingUnit: actualEtaSpacingUnit } = sut
+      // Verify outcome
+      equal(expectedEtaSpacingUnit, actualEtaSpacingUnit)
+    }),
   ]),
 
   given(`a fontSize setting`, [

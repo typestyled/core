@@ -68,5 +68,6 @@ export function configure(
     kappaSpacingUnit,
     iotaSpacingUnit,
     thetaSpacingUnit,
+    etaSpacingUnit: `60px`,
   }
 }

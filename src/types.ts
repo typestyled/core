@@ -24,6 +24,7 @@ export type Configuration = {
   readonly kappaSpacingUnit: PixelLength
   readonly iotaSpacingUnit: PixelLength
   readonly thetaSpacingUnit: PixelLength
+  readonly etaSpacingUnit: PixelLength
 }
 
 export type PixelLength = string
