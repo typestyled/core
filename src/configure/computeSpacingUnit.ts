@@ -1,5 +1,6 @@
 /*!
- * Copyright © 2017 The Typestyled Authors. All rights reserved.
+ * Copyright © 2017 The Typestyled Authors. Licensed under the MIT license.
+ * See LICENSE.txt in the project root for complete license information.
  *
  * File:    computeSpacingUnit.ts
  *
@@ -17,6 +18,9 @@ import { curry2, pipe } from '@typed/functions'
 import { multiply } from '@typed/math'
 import { px } from 'csx/lib'
 
+/**
+ * Computes the rounded spacing unit for the factored baseline grid.
+ */
 export const computeSpacingUnit = curry2(function computeSpacingUnit(
   baselineGrid: PixelLength,
   factor: NonnegativeRealNumber

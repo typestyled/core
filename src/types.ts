@@ -1,5 +1,6 @@
 /*!
- * Copyright © 2017 The Typestyled Authors. All rights reserved.
+ * Copyright © 2017 The Typestyled Authors. Licensed under the MIT license.
+ * See LICENSE.txt in the project root for complete license information.
  *
  * File:    types.ts
  *

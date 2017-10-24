@@ -1,5 +1,6 @@
 /*!
- * Copyright © 2017 The Typestyled Authors. All rights reserved.
+ * Copyright © 2017 The Typestyled Authors. Licensed under the MIT license.
+ * See LICENSE.txt in the project root for complete license information.
  *
  * File:    configure.ts
  *
@@ -35,6 +36,9 @@ const DEFAULT_GAMMA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 12
 const DEFAULT_BETA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 13
 const DEFAULT_ALPHA_SPACING_UNIT_FACTOR: NonnegativeRealNumber = 14
 
+/**
+ * Configures the core with the given settings.
+ */
 export function configure(
   {
     fontSize = DEFAULT_FONT_SIZE,
