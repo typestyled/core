@@ -1428,9 +1428,9 @@ forwarded@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
 
-free-style@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/free-style/-/free-style-2.4.1.tgz#4ef5a6d8a873f7b99beaf6410b428e0ba1b0f376"
+free-style@2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/free-style/-/free-style-2.5.1.tgz#5e3f684c470d3bba7e4dbb43524e0a08917e873c"
 
 fresh@0.5.2:
   version "0.5.2"
@@ -3449,11 +3449,11 @@ typescript@2.5.3, typescript@^2.3.4:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.3.tgz#df3dcdc38f3beb800d4bc322646b04a3f6ca7f0d"
 
-typestyle@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-1.4.5.tgz#545838f6fcbcd709cdf9e219be482c75b5331ab8"
+typestyle@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-1.5.1.tgz#b2c79c4d6d5c6e2cc6bffdc9468665512910b8e5"
   dependencies:
-    free-style "2.4.1"
+    free-style "2.5.1"
 
 uglify-js@3.1.x:
   version "3.1.5"
