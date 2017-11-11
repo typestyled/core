@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@typed/test": "4.0.0",
+    "@typed/test": "6.2.0",
     "husky": "0.14.3",
     "import-sort-cli": "3.3.0",
     "import-sort-parser-typescript": "3.2.0",
