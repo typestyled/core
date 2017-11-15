@@ -49,13 +49,13 @@
     "import-sort-parser-typescript": "3.2.0",
     "import-sort-style-eslint": "3.0.0",
     "lint-staged": "5.0.0",
-    "prettier": "1.7.4",
+    "prettier": "1.8.2",
     "rimraf": "2.6.2",
-    "typescript": "2.5.3"
+    "typescript": "2.6.1"
   },
   "dependencies": {
-    "@typed/prelude": "4.0.0",
+    "@typed/prelude": "5.0.0",
     "csx": "8.5.0",
-    "typestyle": "1.4.5"
+    "typestyle": "1.5.1"
   }
 }
