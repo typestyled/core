@@ -3492,9 +3492,9 @@ typescript@^2.3.4:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.3.tgz#df3dcdc38f3beb800d4bc322646b04a3f6ca7f0d"
 
-typestyle@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-1.6.0.tgz#4790d1c6d92e3ecff6d05a8ab7be22bf3b8f3d98"
+typestyle@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-1.7.1.tgz#bd86d2425cd1ac7b4089c7ac489239b9d20d28f6"
   dependencies:
     free-style "2.5.1"
 
