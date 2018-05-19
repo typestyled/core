@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "@typed/prelude": "5.0.0",
-    "csx": "8.5.0",
+    "csx": "9.0.0",
     "typestyle": "1.7.2"
   }
 }

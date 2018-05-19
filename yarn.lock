@@ -1185,9 +1185,15 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
-csx@8.5.0:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/csx/-/csx-8.5.0.tgz#0ac917930656625c4ea0cd5da2ab4971d86e2802"
+csstype@^2.5.1:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.2.tgz#4534308476ceede8fbe148b9b99f9baf1c80fa06"
+
+csx@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/csx/-/csx-9.0.0.tgz#490ea99eac6834a8c90ecfc555e5e77e7eb00a03"
+  dependencies:
+    csstype "^2.5.1"
 
 d@1:
   version "1.0.0"
