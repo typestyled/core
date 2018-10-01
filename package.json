@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@typed/test": "6.5.0",
-    "husky": "0.14.3",
+    "husky": "1.0.1",
     "import-sort-cli": "4.2.0",
     "import-sort-parser-typescript": "4.2.0",
     "import-sort-style-eslint": "4.2.0",
