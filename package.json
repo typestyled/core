@@ -54,7 +54,7 @@
     "typescript": "3.9.7"
   },
   "dependencies": {
-    "@typed/prelude": "5.0.0",
+    "@typed/prelude": "6.0.0",
     "csx": "9.1.0",
     "typestyle": "2.1.0"
   }
