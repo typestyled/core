@@ -1264,9 +1264,10 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.4.0:
-  version "2.5.6"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.6.tgz#2ae1db2319642d8b80a668d2d025c6196071e788"
+csstype@2.6.9:
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.9.tgz#05141d0cd557a56b8891394c1911c40c8a98d098"
+  integrity sha512-xz39Sb4+OaTsULgUERcCk+TJj8ylkL4aSVDQiX/ksxbELSqwkgt4d4RD7fovIdgJGSuNYqwZEiVjYY5l0ask+Q==
 
 csstype@^2.5.1:
   version "2.5.2"
@@ -2090,9 +2091,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-free-style@2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/free-style/-/free-style-2.5.1.tgz#5e3f684c470d3bba7e4dbb43524e0a08917e873c"
+free-style@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/free-style/-/free-style-3.1.0.tgz#4e2996029534e6b1731611d843437b9e2f473f08"
+  integrity sha512-vJujYSIyT30iDoaoeigNAxX4yB1RUrh+N2ZMhIElMr3BvCuGXOw7XNJMEEJkDUeamK2Rnb/IKFGKRKlTWIGRWA==
 
 fresh@0.5.2:
   version "0.5.2"
@@ -5295,22 +5297,18 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@3.9.7:
+typescript@3.9.7, typescript@^3.2.4:
   version "3.9.7"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
-typescript@^3.2.4:
-  version "3.9.7"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
-  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
-
-typestyle@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-2.0.1.tgz#9593e6029ce5f23f1a5728ddd3ed6bf1ffa781f8"
+typestyle@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-2.1.0.tgz#7c5cc567de72cd8bfb686813150b92791aaa7636"
+  integrity sha512-6uCYPdG4xWLeEcl9O0GtNFnNGhami+irKiLsXSuvWHC/aTS7wdj49WeikWAKN+xHN3b1hm+9v0svwwgSBhCsNA==
   dependencies:
-    csstype "^2.4.0"
-    free-style "2.5.1"
+    csstype "2.6.9"
+    free-style "3.1.0"
 
 uglify-js@3.1.x:
   version "3.1.5"
