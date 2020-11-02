@@ -1484,10 +1484,10 @@ csstype@^2.5.1:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.2.tgz#4534308476ceede8fbe148b9b99f9baf1c80fa06"
 
-csx@9.1.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/csx/-/csx-9.1.0.tgz#add8e5102857fbe81c0edd76c672cf593067a79a"
-  integrity sha512-klhvUgpPYdZIM8WshgDqDrgiBr/j8hMpv9+RflCxdsSfvdynF1IKYOCoXGW0io8GeqHqDONn6LnZdmtzxpDYUQ==
+csx@10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/csx/-/csx-10.0.1.tgz#1b94a8297fb9f2a5c158e277a0961a5841d7ea18"
+  integrity sha512-eiumhK/Ke6KpcuaGqCcdfEW+M1R7dJBdsSeQaUq2cVpHXGe3WIQVEL7tlWUmgZlILGdPi7MqrbwXADmZg+uQgA==
   dependencies:
     csstype "^2.5.1"
 
